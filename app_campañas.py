@@ -363,8 +363,13 @@ elif menu == "Carga del Dataset":
     st.dataframe(diccionario, use_container_width=True)
 
     st.info(
-      "  La variable "Success" significca que el cliente ya aceptó una campaña anterior,"
-      "Failure" significa que el cliente no aceptó una campaña anterior y "Nonexistent" significa que el cliente no tuvo campaña previa."
+        """
+        La variable **Success** significa que el cliente ya aceptó una campaña anterior.
+
+        **Failure** significa que el cliente no aceptó una campaña anterior.
+
+        **Nonexistent** significa que el cliente no tuvo campaña previa.
+        """
     )
 
     footer()
@@ -694,16 +699,21 @@ elif menu == "EDA":
 
             mejor = tabla.iloc[0]
 
-            st.caption(
-                f"La categoría con mayor tasa de aceptación en {descripcion.lower()} "
-                f"es '{mejor['Categoría']}', con una tasa de {formato_pct(mejor['Tasa de aceptación'])}."
-            )
+            categoria = mejor["Categoría"]
+            tasa = formato_pct(mejor["Tasa de aceptación"])
 
-            if variable == "poutcome":
-                st.info(
-                    "Interpretación: success significa que el cliente aceptó una campaña anterior; "
-                    "failure significa que no aceptó; nonexistent significa que no tuvo campaña previa."
-                )
+            st.caption( 
+            f"La categoría con mayor tasa de aceptación en {descripcion.lower()} "
+            f"es '{categoria}', con una tasa de {tasa}."
+            )
+            
+            st.markdown("""
+                **Interpretación de `poutcome`:**
+
+                - **Success**: el cliente aceptó una campaña anterior.
+                - **Failure**: el cliente no aceptó una campaña anterior.
+                - **Nonexistent**: el cliente no tuvo campaña previa.
+                    """)
 
     with tabs[8]:
 
@@ -826,7 +836,7 @@ elif menu == "EDA":
 
         2. Los clientes que aceptaron la campaña presentan una mayor duración mediana
         de contacto frente a quienes no aceptaron. Esto sugiere que las interacciones con mas duración 
-         podrían estar asociadas a una mayor probabilidad de conversión.
+         podrían estar asociadas a una mayor probabilidad de aceptación.
 
         3. El canal de contacto con mejor desempeño fue
         **{tasa_contacto.iloc[0]['Categoría']}**,
