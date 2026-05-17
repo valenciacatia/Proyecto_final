@@ -707,9 +707,10 @@ elif menu == "EDA":
             f"es '{categoria}', con una tasa de {tasa}."
             )
             
-            st.markdown("""
+            
+            if variable == "poutcome":
+                st.markdown("""
                 **Interpretación de `poutcome`:**
-
                 - **Success**: el cliente aceptó una campaña anterior.
                 - **Failure**: el cliente no aceptó una campaña anterior.
                 - **Nonexistent**: el cliente no tuvo campaña previa.
