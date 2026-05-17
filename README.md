@@ -65,7 +65,7 @@ La sección Carga del Dataset permite cargar el archivo `BankMarketing.csv`, val
 
 ### Análisis Exploratorio de Datos
 
-La sección **EDA** permite identificar las principales características de los clientes que aceptan o no aceptan la campaña.  
+La sección EDA permite identificar las principales características de los clientes que aceptan o no aceptan la campaña.  
 Incluye análisis general, clasificación de variables, estadística descriptiva, valores faltantes, análisis numérico, análisis categórico y análisis bivariado.
 
 
@@ -83,5 +83,5 @@ La sección Conclusiones resume los principales hallazgos encontrados en el aná
 
 ## Conclusión general
 
-El análisis permite identificar patrones relevantes asociados a la aceptación de campañas de marketing, como el canal de contacto, la duración de la interacción, el historial de campañas anteriores y ciertas características del perfil del cliente.  
+El análisis permite identificar las principales caracteristicas asociadas a la aceptación de campañas de marketing, como el canal de contacto, la duración de la interacción, el historial de campañas anteriores y ciertas características del perfil del cliente.  
 Estos resultados pueden servir como base para mejorar la segmentación comercial y orientar mejor futuras campañas.
