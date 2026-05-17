@@ -451,7 +451,7 @@ elif menu == "EDA":
 
         st.info(
             "La participación indica qué porcentaje representa la categoría más frecuente de cada variable. "
-            "No significa porcentaje de datos disponibles."
+            "No significa participación dentro del total de datos."
         )
 
     with tabs[3]:
@@ -641,7 +641,7 @@ elif menu == "EDA":
             mejor_fila = tabla_mediana.sort_values(variable, ascending=False).iloc[0]
 
             st.caption(
-                f"La mayor mediana de {descripcion.lower()} se observa en el grupo "
+                f"La mediana de {descripcion.lower()} se observa en el grupo "
                 f"'{mejor_fila[VARIABLE_OBJETIVO]}', con un valor de {mejor_fila[variable]:,.2f}."
             )
 
