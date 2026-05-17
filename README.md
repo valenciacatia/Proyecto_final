@@ -47,6 +47,11 @@ Luego, desde la carpeta del proyecto, ejecutar:
 ```bash
 streamlit run app_campañas.py
 ```
+## Link para ingresar a la aplicación
+
+[Ingresar a la aplicación](https://proyecto-final-bank-marketing.streamlit.app/)
+
+
 ## Visualización de la aplicación
 
 ### Home
