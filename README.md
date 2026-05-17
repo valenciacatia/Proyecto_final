@@ -49,7 +49,7 @@ streamlit run app_campañas.py
 ```
 ## Link para ingresar a la aplicación
 
-[Ingresar a la aplicación](https://proyecto-final-bank-marketing.streamlit.app/)
+[Aplicación Bank-Marketing](https://proyecto-final-bank-marketing.streamlit.app/)
 
 
 ## Visualización de la aplicación
